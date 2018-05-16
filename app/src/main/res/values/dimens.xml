@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="default_padding">16dp</dimen>
+    <dimen name="small_padding">8dp</dimen>
+    <dimen name="list_padding">4dp</dimen>
+
+    <dimen name="stroke_width">1dp</dimen>
+
+    <dimen name="large_margin">48dp</dimen>
+    <dimen name="fab_margin">@dimen/default_padding</dimen>
+    <dimen name="text_size_default_list_title">18sp</dimen>
+    <dimen name="text_size_default_list_subtitle">16sp</dimen>
+    <dimen name="text_size_default_list_item">14sp</dimen>
+
+    <integer name="animation_delay">250</integer>
+</resources>

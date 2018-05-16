@@ -1,0 +1,51 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+
+    </style>
+
+    <style name="SplashScreen" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="SplashScreen.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="SplashScreen.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="DefaultListItem">
+        <item name="android:paddingBottom">@dimen/list_padding</item>
+        <item name="android:paddingStart">@dimen/list_padding</item>
+        <item name="android:paddingEnd">@dimen/list_padding</item>
+        <item name="android:textColor">@color/text_color_default</item>
+        <item name="android:textSize">@dimen/text_size_default_list_title</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">3</item>
+    </style>
+
+    <style name="DefaultListTitle" parent="DefaultListItem">
+        <item name="android:textSize">@dimen/text_size_default_list_title</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <style name="Email" parent="DefaultListItem">
+        <item name="android:textSize">@dimen/text_size_default_list_subtitle</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textColor">@color/text_color_email</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+</resources>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/default_padding"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/user_name"
+            style="@style/DefaultListTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="John Dou" />
+
+        <TextView
+            android:id="@+id/user_info"
+            style="@style/DefaultListItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/default_padding"
+            tools:text="Info line #1\nInfo line #2\nInfo line #3\nInfo line #4" />
+
+    </LinearLayout>
+
+</merge>

@@ -2,13 +2,11 @@ package toys.miniwooden.vzuklontest.model.api
 
 import com.google.gson.annotations.Expose
 
-class ApiCommentItem : BaseApiItem() {
-    @Expose
-    val postId : Int = 0;
-    @Expose
-    val name : String? = null;
-    @Expose
-    val email : String? = null;
-    @Expose
-    var body: String? = null
-}
+data class ApiCommentItem(
+
+        @Expose val postId: Int,
+        @Expose val name: String?,
+        @Expose val email: String?,
+        @Expose var body: String?
+
+) : BaseApiItem()

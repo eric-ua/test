@@ -2,11 +2,8 @@ package toys.miniwooden.vzuklontest.model.api
 
 import com.google.gson.annotations.Expose
 
-class ApiCompany {
-    @Expose
-    val name: String? = null;
-    @Expose
-    val catchPhrase: String? = null;
-    @Expose
-    val bs: String? = null;
-}
+data class ApiCompany(
+        @Expose val name: String?,
+        @Expose val catchPhrase: String?,
+        @Expose val bs: String?
+)

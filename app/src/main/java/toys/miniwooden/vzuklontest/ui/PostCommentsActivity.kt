@@ -11,6 +11,7 @@ import kotlinx.coroutines.experimental.launch
 import toys.miniwooden.vzuklontest.R
 import toys.miniwooden.vzuklontest.UklonTestApplication
 import toys.miniwooden.vzuklontest.model.Constants
+import toys.miniwooden.vzuklontest.model.extInfo
 import toys.miniwooden.vzuklontest.services.local.IPostsDataProvider
 import toys.miniwooden.vzuklontest.services.local.IUsersDataProvider
 import toys.miniwooden.vzuklontest.ui.adapter.CommentsListAdapter
@@ -66,9 +67,9 @@ class PostCommentsActivity : BaseActivity() {
 
             val user = if (post != null) usersDataProvider.getUser(post.userId, force) else null
 
-            runOnUiThread(Runnable {
+            runOnUiThread({
                 user_name.text = user?.name
-                user_info.text = user?.extInfo
+                user_info.text = user?.extInfo()
                 adapter.items = comments
                 refresh.isRefreshing = false
             })

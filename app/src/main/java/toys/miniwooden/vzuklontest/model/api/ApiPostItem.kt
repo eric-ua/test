@@ -2,13 +2,10 @@ package toys.miniwooden.vzuklontest.model.api
 
 import com.google.gson.annotations.Expose
 
-class ApiPostItem : BaseApiItem() {
+class ApiPostItem(
 
-    @Expose
-    var userId: Int = 0
-    @Expose
-    var title: String? = null
-    @Expose
-    var body: String? = null
+        @Expose var userId: Int,
+        @Expose var title: String?,
+        @Expose var body: String?
 
-}
+) : BaseApiItem()
